@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # rMusic — High-Resolution CLI Audio Player (Rust)
 
 rMusic is a high-performance command-line audio player implemented in Rust. It focuses on accurate playback of high-resolution audio files, robust queue and playlist management, and a small, scriptable CLI surface. The project compiles to a native binary (`rmusic`) and includes examples and tests.
@@ -226,6 +225,3 @@ Please avoid committing secrets (API keys) or local environment files.
   - Check CPU / scheduling and other processes using audio hardware.
 
 ---
-=======
-# HD-Music-Player-Rust-CLI
->>>>>>> 24dc3c9853de85eb274a59ee09aee1b05be0db47
