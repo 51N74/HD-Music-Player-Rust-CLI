@@ -1,0 +1,109 @@
+# -----------------------------------------------------------------------------
+# RUST BUILD ARTIFACTS (CRITICAL)
+# -----------------------------------------------------------------------------
+# The directory where Rust stores all compiled files, object files, and binaries.
+target/
+
+# -----------------------------------------------------------------------------
+# GENERIC BUILD OUTPUTS & ARTIFACTS
+# (For non-Rust or mixed-language build steps)
+# -----------------------------------------------------------------------------
+build/
+dist/
+out/
+reports/
+coverage/
+
+# Ignore compiled binary artifacts (if project includes languages that compile)
+*.exe
+*.dll
+*.so
+*.dylib
+*.out
+
+# -----------------------------------------------------------------------------
+# LOCAL ENVIRONMENT & LOGS
+# -----------------------------------------------------------------------------
+# Local env files (keep secrets out of git)
+.env
+.env.*
+!.env.example
+/local.settings.json
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+tmp/
+temp/
+
+# Logs
+logs/
+*.log
+debug.log*
+*.log.*
+
+# Certificates and keys
+*.pem
+*.key
+*.crt
+
+# Docker (Keep these as Rust projects often use Docker)
+docker-compose.override.yml
+.env.docker
+*.dockerignore
+
+# -----------------------------------------------------------------------------
+# OS & TEMPORARY FILES
+# -----------------------------------------------------------------------------
+# macOS
+.DS_Store
+.DS_Store?
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+desktop.ini
+ehthumbs.db
+Icon?
+
+# Short-lived files & Editor backups
+*~
+*.swp
+\#*\#
+.session
+.recently-used
+.Trashes
+.nfs*
+
+# -----------------------------------------------------------------------------
+# EDITORS & IDES
+# -----------------------------------------------------------------------------
+# VSCode
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# JetBrains IDEs (IntelliJ, RustRover, CLion, etc.)
+.idea/
+*.iml
+*.iws
+
+# Visual Studio / Rider
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Other Editor files (Sublime, Eclipse, etc.)
+.project
+.classpath
+*.launch
+*.sublime-workspace
+*.sublime-project
+.svn/

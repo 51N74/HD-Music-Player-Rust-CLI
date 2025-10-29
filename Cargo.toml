@@ -1,0 +1,38 @@
+[package]
+name = "hires-audio-player"
+version = "0.1.0"
+edition = "2021"
+authors = ["Your Name <your.email@example.com>"]
+description = "A high-performance CLI audio player for high-resolution audio files"
+license = "MIT"
+
+[dependencies]
+clap = { version = "4.4", features = ["derive"] }
+cpal = "0.15"
+symphonia = { version = "0.5", features = ["all"] }
+tokio = { version = "1.0", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+thiserror = "1.0"
+toml = "0.8"
+dirs = "5.0"
+ctrlc = "3.4"
+log = "0.4"
+env_logger = "0.10"
+chrono = { version = "0.4", features = ["serde"] }
+sysinfo = "0.29"
+
+[target.'cfg(target_os = "macos")'.dependencies]
+libc = "0.2"
+
+[dev-dependencies]
+tokio-test = "0.4"
+serde_json = "1.0"
+tempfile = "3.8"
+
+[[example]]
+name = "config_demo"
+path = "examples/config_demo.rs"
+
+[[bin]]
+name = "rmusic"
+path = "src/main.rs"
